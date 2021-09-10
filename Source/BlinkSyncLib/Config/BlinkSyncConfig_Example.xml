@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration Application="Macom.Mentech.Utils.Configuration.XML">
+  <mail-server>10.90.15.8</mail-server>
+  <email-recipients>
+    <email>john.plourd@macom.com</email>
+  </email-recipients>
+  <sftp-connection>
+    <server>files.macom.com</server> 
+    <username>memtech</username>
+    <password>u7qmjv</password>
+  </sftp-connection>
+  
+  <!-- For Status Dashboard-->
+  <CALBAR>
+    <Push-Mentech-Calbar-to-cloud>
+      <object> CalbarPushFromMentechToCloud </object>
+    </Push-Mentech-Calbar-to-cloud>
+  </CALBAR>
+  <!-- End For Status Dashboard-->
+
+  <database1-connection>
+    <server>127.0.0.1</server>
+    <database-name>singulation1</database-name>
+    <user-name>mentech_user</user-name>
+    <password>Lab123</password>
+  </database1-connection>
+  
+  <!--<database1-connection>
+    <server>ithdb01</server>
+    <database-name>singulation1</database-name>
+    <user-name>mentech_user</user-name>
+    <password>Lab123</password>
+  </database1-connection>-->
+
+  <!--<database2-connection>
+    <server>127.0.0.1</server>
+    <database-name>mentech_status</database-name>
+    <user-name>mentech_user</user-name>
+    <password>Lab123</password>
+  </database2-connection>-->
+ 
+  <database2-connection>
+    <server>sus07p010</server>
+    <database-name>mentech_status</database-name>
+    <user-name>mentech_user</user-name>
+    <password>Lab123</password>
+  </database2-connection>
+
+  <pull-origin>c:\MentechLogs\MentechCalbar\MentechSide\TestData</pull-origin>
+  <pull-destination>C:\MentechLogs\MentechCalbar\MentechSide\Archive</pull-destination>
+  <pull-error-destination>C:\MentechLogs\MentechCalbar\MentechSide\ErrorArchive</pull-error-destination>
+  <pull-temp-directory>C:\MentechLogs\MentechCalbar\MentechSide\Temp</pull-temp-directory>
+  <!--<push-origin>C:\MentechLogs\MentechCalbar\MentechSide\TestData</push-origin>-->
+  <push-origin>C:\MentechData\MentechCalbar</push-origin>
+  <push-destination>C:\MentechLogs\MentechCalbar\MentechSide\PushDestination</push-destination>
+  <push-error-destination>C:\MentechLogs\MentechCalbar\MentechSide\PushDestinationError</push-error-destination>
+  <push-temp-directory>C:\MentechLogs\MentechCalbar\MentechSide\Temp</push-temp-directory>
+  <pull-upload-liv-directory>C:\MentechLogs\MentechCalbar\MentechSide\measurement_data\liv</pull-upload-liv-directory>
+  <pull-upload-sqlinserts-directory>C:\MentechLogs\MentechCalbar\MentechSide\measurement_data\transfer</pull-upload-sqlinserts-directory>
+  <calbar-ftp-archives>Renci.SshNet/CalbarArchives</calbar-ftp-archives>
+</configuration>
